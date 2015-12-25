@@ -1,0 +1,17 @@
+{
+  "name": "qpx-client",
+  "version": "0.0.1",
+  "description": "Simple client for QPX Express API",
+  "keywords": [
+      "QPX", 
+      "API", 
+      "client"
+  ],
+  "main": "index.js",
+  "scripts": {},
+  "author": "Vitali Yazvinski",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.67.0"
+  }
+}

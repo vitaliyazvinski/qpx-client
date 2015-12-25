@@ -14,8 +14,8 @@ var QPXClient = require('../'),
                 },
                 "slice": [
                     {
-                        "origin": "VNO",
-                        "destination": "BCN",
+                        "origin": "SFO",
+                        "destination": "LAX",
                         "date": "YYYY-MM-DD"
                     }
                 ],
@@ -34,4 +34,3 @@ qpxClient.search(searchConfig, function (err, data) {
         console.log(util.inspect(data, { depth : 8 }));
     }
 });
-

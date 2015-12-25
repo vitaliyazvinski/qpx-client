@@ -1,11 +1,17 @@
-#qpx-client
-###The simple client for Google QPX Express API.
-##Usage
-###Install qpx-client
+#qpx-client#
+
+###The simple client for Google QPX Express API.###
+
+##Usage##
+
+###Install qpx-client###
+
 ~~~
 npm install qpx-client 
 ~~~
-###Example:
+
+###Example:###
+
 ~~~ javascript
 var QPXClient = require('../'),
     util = require('util'),
@@ -46,4 +52,4 @@ qpxClient.search(searchConfig, function (err, data) {
 ~~~
 
 Replace *YOUR_APIKey* to your API key and *YYYY-MM-DD* with a date, which can be up to a year in the future.
-###Refer to [QPX Express API Page](https://developers.google.com/qpx-express/) to get additional information about API.
+####Refer to [QPX Express API Page](https://developers.google.com/qpx-express/) to get additional information about API.####

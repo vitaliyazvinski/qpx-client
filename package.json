@@ -1,6 +1,6 @@
 {
     "name": "qpx-client",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "Simple client for QPX Express API",
     "keywords": [
         "QPX",

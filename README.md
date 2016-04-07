@@ -1,19 +1,34 @@
 # qpx-client #
 
-### The simple client for Google QPX Express API. ###
+To use qpx-client must `require('qpx-client')`.
 
-## Usage ##
+The simple client for Google QPX Express API.
 
-### Install qpx-client ###
 
-~~~
-npm install qpx-client 
-~~~
 
-### Example: ###
+#### Usage: ####
 
-~~~ javascript
-var QPXClient = require('../'),
+Create instance of client:
+
+```javascript
+qpxClient = new QPXClient(options);
+```
+
+`Options` must contain valid `API key` for QPX Express API and `timeout` in ms (optional):
+
+```javascript
+    options = {
+        key: 'YOUR_APIKey',
+        timeout: 15000
+    }
+```
+
+Then use `qpxClient.search(config, callback)`, 
+
+#### Example: ####
+
+```javascript
+var QPXClient = require('qpx-client'),
     util = require('util'),
 
     options = {
@@ -49,7 +64,11 @@ qpxClient.search(searchConfig, function (err, data) {
         console.log(util.inspect(data, { depth : 8 }));
     }
 });
-~~~
 
-Replace `YOUR_APIKey` to your API key and `YYYY-MM-DD`  with a date, which can be up to a year in the future.
-#### Refer to [QPX Express API Page](https://developers.google.com/qpx-express/) to get additional information about API. ####
+```
+
+Where `searchConfig.body` is a request body for QPX Express API.
+
+Make sure that you put correct time up to year in the future instead of "YYYY-MM-DD" string. 
+
+Refer to [QPX Express API Page](https://developers.google.com/qpx-express/) to get additional information about API.

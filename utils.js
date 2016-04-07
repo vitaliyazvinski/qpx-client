@@ -1,3 +1,5 @@
+'use strict';
+
 var request = require('request');
 
 exports.apiRequest = function (api, options, callback) {

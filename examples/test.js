@@ -1,3 +1,5 @@
+'use strict';
+
 var QPXClient = require('../'),
     util = require('util'),
 
